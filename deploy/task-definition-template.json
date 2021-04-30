@@ -40,14 +40,6 @@
       "image": "${IMAGE_URL}",
       "essential": true,
       "name": "${APP_NAME}",
-      "logConfiguration": {
-        "logDriver": "awslogs",
-        "options": {
-          "awslogs-group": "${CLUSTER_NAME}-${APP_NAME}",
-          "awslogs-region": "${AWS_REGION}",
-          "awslogs-create-group": "true"
-        }
-      },
       "links": ["redis"]
     },
     {
